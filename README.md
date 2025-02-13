@@ -14,26 +14,29 @@ The project follows a standard Flutter structure:
     - **kayit_ol.dart**: The signup screen for new users.
     - **login.dart**: The login screen for existing users.
     - **main.dart**: The main application entry point.
-- **pubspec.yaml**: Project dependencies and configuration.
-- **test/**: Unit and widget tests.
+- **linux/**: Linux-specific project files.
+- **macos/**: macOS-specific project files.
 - **web/**: Web-specific project files.
 - **windows/**: Windows-specific project files.
+- **pubspec.yaml**: Project dependencies and configuration.
+- **test/**: Unit and widget tests.
 - **.gitignore**: Specifies files and directories to exclude from version control.
 - **README.md**: This file.
-
+- **analysis_options.yaml**: Configuration for the Dart analyzer.
+- **pubspec.lock**: Locked dependencies file.
 
 ## Tech Stack & Dependencies
 
-- **Flutter:**  The framework used for cross-platform development.
+- **Flutter:** The framework used for cross-platform development.
 - **Dart:** The programming language used in Flutter.
 - **shared_preferences:** Used for storing user data locally.
-- **cupertino_icons:**  Provides Cupertino-style icons for iOS.
+- **cupertino_icons:** Provides Cupertino-style icons for iOS.
 
 
 ## Installation & Setup
 
 1. **Prerequisites:**
-   - Flutter SDK installed and configured.  See [https://docs.flutter.dev/get-started/install](https://docs.flutter.dev/get-started/install).
+   - Flutter SDK installed and configured. See [https://docs.flutter.dev/get-started/install](https://docs.flutter.dev/get-started/install).
    - An IDE like Android Studio, VS Code, or IntelliJ IDEA with Flutter support.
 
 2. **Clone the repository:**
@@ -60,12 +63,11 @@ flutter pub get
 flutter run
 ```
 
-
 ## Usage Guide
 
-The app starts with a decision screen (`karar_sayfasi.dart`).  You can either:
+The app starts with a decision screen (`karar_sayfasi.dart`). You can either:
 
-- **Login:** Enter a username and password on the login screen (`login.dart`).  Currently, a hardcoded set of usernames and passwords is used for demonstration.  Successful login navigates to the home screen (`anasayfa.dart`).
+- **Login:** Enter a username and password on the login screen (`login.dart`). Currently, a hardcoded set of usernames and passwords is used for demonstration. Successful login navigates to the home screen (`anasayfa.dart`).
 - **Signup:** Create a new account on the signup screen (`kayit_ol.dart`). The new username and password are stored locally using `shared_preferences`. After signup, the app redirects to the login screen.
 
 The home screen displays the entered username and password.
@@ -82,11 +84,9 @@ Contributions are welcome! Please follow these guidelines:
 
 Please adhere to the Dart style guide.
 
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.  (Note:  LICENSE file was not provided in the input data).
 
 ## Author
 
